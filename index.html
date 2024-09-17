@@ -1,136 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>startup</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-
-    <style>
-        .animate-spin-custom {
-            animation: spin 5s linear infinite;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
-<body class="bg-[#f7f7f7]">
+<body class="text-white bg-gradient-to-l from-cyan-300 via-amber-200 to-purple-300">
+    <header class="bg-[#02474d]  ">
+        <nav class="flex items-center justify-between px-12 h-16 sm:gap-24">
+            <!-- <a href="#" class="text-2xl font-bold border-2 px-2 py-1 ">logo</a>  -->
+            <a href="#"><img src="images/Logo.png" alt="logo" class="px-2 py-1 w-24 h-8"></a>
+
+            <div id="dropdown"
+                class="absolute -top-full left-0 max-sm:bg-[#333333] w-full flex flex-col gap-6 items-center text-lg font-bold lg:static sm:static sm:flex-row justify-between">
+                <ul class="flex flex-col items-center gap-6 sm:flex-row sm:gap-9">
+                    <li><a href="#" class="hover:text-orange-400 hover:underline ">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-400 hover:underline">About</a></li>
+                    <li><a href="#service" class="hover:text-orange-400 hover:underline">Service</a></li>
+                    <li><a href="#project" class="hover:text-orange-400 whitespace-nowrap hover:underline">Our Project</a></li>
+                    <li><a href="#contact" class="hover:text-orange-400 whitespace-nowrap hover:underline">Contact us</a></li>
+
+                </ul>
+
+                <div class="flex flex-col items-center bg-orange-700 rounded">
+                    <button>Login</button>
+                </div>
+            </div>
+            <div class="flex sm:hidden lg:hidden">
+                <i id="toggle-btn" class="fa-solid fa-bars text-2xl "></i>
+            </div>
+        </nav>
+    </header>
+    <nav class="text-black pt-20">
+        <div
+            class="text-black flex items-center justify-center bg-gradient-to-l from-cyan-300 via-amber-200 to-purple-300">
+            <img src="https://media.istockphoto.com/id/1371339413/photo/co-working-team-meeting-concept-businessman-using-smart-phone-and-digital-tablet-and-laptop.jpg?s=612x612&w=0&k=20&c=ysEsVw3q2axYt3oVZAuQjtHRlN3lY-U_e0ikK5yKIXQ="
+                class="h-60 w-96 mt-5 outline outline-white shadow-2xl shadow-orange-300">
+
+        </div>
+
+
+        <div class="text-5xl font-bold px-6 flex items-center justify-center">
+            <h1 class="mb-9 mt-9 items-center flex justify-center">Tech Tonic</h1>
+
+        </div>
+        <p class="px-6 mb-5 hover:underline">"Transform your vision into reality with Teach Tonic, where cutting-edge
+            technology meets
+            exceptional creativity. We don’t just build websites—we craft digital experiences that captivate, engage,
+            and deliver measurable results. From sleek, responsive designs to seamless, scalable solutions, our team of
+            experts partners with you every step of the way. Whether you're launching a startup or revolutionizing an
+            enterprise, we’re here to help you push boundaries and achieve digital excellence. Let’s create something
+            extraordinary together."</p>
+
+            
+
+
+            <div
+            class="flex items-center justify-center text-2xl font-bold text-orange-700 sm:flex sm:items-center sm:justify-center mt-11">
+            <h1 id="service">Services</h1>
+        </div>
 
 
 
-    <!-- nav section  -->
-    <nav
-        class="bg-white flex items-center justify-between px-[12%] shadow-2xl fixed z-50 w-full  border-b-2 border-slate-600">
-        <img src="images/Logo.png" class="w-24 h-8 rounded-sm my-2">
+        <div
+            class="my-20 px-[5%] mx-auto grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:overflow-x-scroll no-scrollbar sm:flex">
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#d3b0f4] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Software Developement</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">provide a better quality s/w
+                    products.</h3>
+            </div>
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#d3b0f4] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Software Developement</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">provide a better quality s/w
+                    products.</h3>
+            </div>
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#d3b0f4] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Software Developement</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">provide a better quality s/w
+                    products.</h3>
+            </div>
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#d3b0f4] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Software Developement</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">provide a better quality s/w
+                    products.</h3>
+            </div>
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#d3b0f4] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Software Developement</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">provide a better quality s/w
+                    products.</h3>
+            </div>
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#d3b0f4] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Software Developement</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">provide a better quality s/w
+                    products.</h3>
+            </div>
 
 
-        <ul class="flex items-center justify-center gap-8  text-lg font-semibold">
-            <li><a href="#home" class="  text-[#0a0a0a] hover: hover:text-red-600  px-1">Home</a>
-            </li>
-            <li><a href="#services" class="  text-[#0a0a0a] hover: hover:text-red-600">Services</a></li>
-            <li><a href="#about" class="  text-[#0a0a0a] hover:text-red-600">About us</a></li>
-            <li><a href="#contact" class="  text-[#0a0a0a]  hover:text-red-600">Contact us</a></li>
-            <li><a href="#insights" class="  text-[#0a0a0a]  hover:text-red-600">Insights</a></li>
+
+        </div>
+
+        <div
+            class="flex items-center justify-center text-2xl font-bold text-orange-700 sm:flex sm:items-center sm:justify-center">
+            <h1 id="project">Our Project</h1>
+        </div>
+
+        <div class="my-20 px-[5%] mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 ">
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#cb85a1] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5 ">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Responsive Website</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">A fully responsive multi-page
+                    Website for local business. </h3>
+                <button><a href="https://github.com" class="text-blue-700">view project..</a>
+
+            </div>
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#cb85a1] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Responsive Website</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">A fully responsive multi-page
+                    Website for local business. </h3>
+                <button><a href="https://github.com" class="text-blue-700">view project..</a>
+
+            </div>
+
+            <div
+                class="bg-white shadow-lg hover:bg-[#cb85a1] hover:translate-x-1 hover:-translate-y-1 duration-500 border-[0.5px] border-white rounded-sm p-5">
+                <i class="fa-solid fa-code text-xl"></i>
+                <h1 class="text-lg font-bold whitespace-pre-wrap text-wrap break-words">Responsive Website</h1>
+                <h3 class="text-sm font-light whitespace-pre-wrap text-wrap break-words">A fully responsive multi-page
+                    Website for local business. </h3>
+                <button><a href="https://github.com" class="text-blue-700">view project..</a>
+
+            </div>
+        </div>
+
+
+        <div>
+            <div class="flex items-center justify-center text-2xl text-orange-700 font-bold">
+                <h1 id="contact">Contact Us</h1>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="79d14dde-5d05-4a13-93cf-764059d32561">
+
+
+
+                <div class="flex flex-col items-center justify-center py-10 mt-24 gap-6 bg-[#ae9b76]">
+
+                    <div class="flex flex-col sm:flex-row gap-8">
+                        <input required type="text" name="name" placeholder="Enter your Name" autocomplete="off"
+                            class="border border-gray-400 text-black/80 bg-gray-100  p-2 text-sm focus:outline-none  focus:ring-0 rounded-sm">
+                        <input required type="email" name="email" placeholder="Enter your Email" autocomplete="off"
+                            class="border border-gray-400 text-black/80 bg-gray-100  p-2 text-sm focus:outline-none  focus:ring-0 rounded-sm">
+
+                    </div>
+
+
+                    <textarea name="msg" cols="54" rows="10" required autocomplete="off"
+                        placeholder="Drop your Question.."
+                        class="border border-gray-400 text-black/80 bg-gray-100  p-2 text-sm focus:outline-none  focus:ring-0 rounded-sm "></textarea>
+
+
+                    <button type="submit"
+                        class="rounded-lg border border-gray-100 text-white/80 max-w-max px-2 mx-auto py-1 bg-black/80 hover:bg-black hover:text-white">
+                        <i class="fa-solid fa-paper-plane p-2"></i>Send Msg</button>
+                </div>
+
+
+
+
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+        <div class="flex flex-col gap-4 mt-7 px-6 items-center sm:items-center ">
+            <p class="font-semibold">Our Social Media:</p>
+            <ul class="flex gap-6">
+                <li><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://facbook.com"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
     </nav>
 
 
-    <!-- header section  -->
-
-    <div class="flex items-center justify-between px-[12%] pt-[15%] gap-8">
-        <div class="">
-            <h3 id="me" class="text-gray-800 font-semibold text-2xl whitespace-normal text-wrap break-words">Hello there
-                ;)</h3>
-            <h1 id="mee" class="text-gray-800 font-semibold text-6xl whitespace-normal text-wrap break-words ">This is
-                <span class="text-[#ff942f]">Tech
-                    Tonic</span>
-            </h1>
-            <h2 id="meee" class="text-gray-800 font-semibold text-3xl ">Web Dev Com..</h2>
-            <button class="text-red-500">Read More..</button>
-
-        </div>
-
-
-        <div class="flex-1">
-            <img src="images/img.jpg.jpg" alt="logo">
-
-        </div>
-
-    </div>
-    <!-- service -->
-
-    <div>
-
-
-
-        <div class="flex flex-row items-center justify-center gap-8 my-20 bg-slate-600 py-20 relative">
-
-
-            <div class="absolute top-5 left-3 rounded-2xl bg-slate-800 w-24 h-24 animate-spin-custom "></div>
-
-
-            <div
-                class="absolute top-5 right-3 rounded-full border-b-8 border-t-8 border-white/80 bg-transparent  w-24 h-24 animate-spin-custom">
-            </div>
-
-            <!-- card  -->
-            <div
-                class="flex flex-col gap-8 items-start justify-start bg-rose-200 rounded-md
-             border border-gray-500 p-8 hover:bg-rose-300/80 hover:translate-x-1 hover:-translate-y-1 duration-500 z-10 shadow-white/50 shadow-sm">
-                <h1 class="text-black/90 font-bold text-2xl">Our Services</h1>
-                <ul
-                    class="list-disc flex flex-col gap-4 items-start justify-start text-lg text-black/80 font-semibold px-5">
-                    <li>Custom Website Dev</li>
-                    <li>Responsive Web Design</li>
-                    <li>Single page Application</li>
-                    <li>E-Commerce Dev</li>
-
-                </ul>
-            </div>
-
-            <!-- card -->
-            <div
-                class="flex flex-col gap-8 items-start justify-start bg-rose-200 rounded-md
-             border border-gray-500 p-8 hover:bg-rose-300/80 hover:translate-x-1 hover:-translate-y-1 duration-500 z-10 shadow-white/50 shadow-sm">
-                <h1 class="text-black/90 font-bold text-2xl">Our Services</h1>
-                <ul
-                    class="list-disc flex flex-col gap-4 items-start justify-start text-lg text-black/80 font-semibold px-5">
-                    <li>Custom Website Dev</li>
-                    <li>Responsive Web Design</li>
-                    <li>Single page Application</li>
-                    <li>E-Commerce Dev</li>
-
-                </ul>
-            </div>
-
-           <!-- card -->
-            <div
-                class="flex flex-col gap-8 items-start justify-start bg-rose-200 rounded-md
-             border border-gray-500 p-8 hover:bg-rose-300/80 hover:translate-x-1 hover:-translate-y-1 duration-500 z-10 shadow-white/50 shadow-sm">
-                <h1 class="text-black/90 font-bold text-2xl">Our Services</h1>
-                <ul
-                    class="list-disc flex flex-col gap-4 items-start justify-start text-lg text-black/80 font-semibold px-5">
-                    <li>Custom Website Dev</li>
-                    <li>Responsive Web Design</li>
-                    <li>Single page Application</li>
-                    <li>E-Commerce Dev</li>
-
-                </ul>
-            </div>
 
 
 
 
 
-        </div>
-
-
-
-    </div>
-
-
-
-
-
+    <script src="script.js"></script>
 
 </body>
 
