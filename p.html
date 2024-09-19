@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="text-white">
+    <header class="bg-[#333333]">
+        <nav class="flex items-center justify-between px-12 h-16 sm:gap-24">
+            <a href="#" class="text-2xl font-bold border-2 px-2 py-1 ">Logo</a> 
+
+            <div id="dropdown" class="absolute -top-full left-0 max-sm:bg-[#333333] w-full flex flex-col gap-6 items-center text-lg font-bold lg:static sm:static sm:flex-row justify-between">
+                <ul class="flex flex-col items-center gap-6 sm:flex-row sm:gap-9">
+                    <li><a href="#" class="hover:text-orange-400">Home</a></li>
+                    <li><a href="#" class="hover:text-orange-400">About</a></li>
+                    <li><a href="#" class="hover:text-orange-400">Service</a></li>
+                    <li><a href="#" class="hover:text-orange-400 whitespace-nowrap">Our Work</a>About</li>
+                    <li><a href="#" class="hover:text-orange-400 whitespace-nowrap">Contact us</a></li>
+
+                </ul>
+
+                <div class="flex flex-col items-center bg-orange-700 rounded">
+                    <button>Login</button>
+                </div>               
+            </div>
+            <div class="flex sm:hidden lg:hidden">
+                <i id="toggle-btn" class="fa-solid fa-bars text-2xl "></i>
+                <i id="cl" class="fa-solid fa-xmark text-2xl hidden"></i>
+            </div>
+        </nav>
+    </header>
+    <script>
+
+        const toggleBtn = document.getElementById('toggle-btn'); // Hamburger icon
+        const closeBtn = document.getElementById('close-btn');   // Close icon
+        const dropdown = document.getElementById('dropdown');    // Dropdown menu
+
+        // Function to open the menu (hamburger -> close)
+        toggleBtn.addEventListener('click', () => {
+            dropdown.style.top = '0';                // Slide down the dropdown menu
+            toggleBtn.classList.add('hidden');       // Hide hamburger icon
+            closeBtn.classList.remove('hidden');     // Show close icon
+        });
+
+        // Function to close the menu (close -> hamburger)
+        closeBtn.addEventListener('click', () => {
+            dropdown.style.top = '-100%';            // Slide up the dropdown menu
+            closeBtn.classList.add('hidden');        // Hide close icon
+            toggleBtn.classList.remove('hidden');    // Show hamburger icon
+        });
+    </script>
+    
+</body>
+</html>

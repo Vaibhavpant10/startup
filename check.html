@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <nav class="flex items-center justify-between px-[12%] w-full py-1 shadow-2xl z-10">
+        <img src="./images/Logo.png" alt="" class="w-24 h-8">
+        <ul class="hidden sm:flex flex-row items-center justify-center gap-8 text-black">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div onclick="open()" id="openMenu" class="block sm:hidden">
+            <i id="cl" class="fa-solid fa-bars text-2xl p-2"></i>
+        </div>
+    </nav>
+
+
+
+    <!-- mobile nav  -->
+
+    <div id="mobileNav" class="hidden bg-rose-400 p-10 absolute right-0 top-0 z-30 h-screen w-[75%]">
+        <div  class=" absolute top-6 right-6" id="closeMenu">
+            <i id="cl" class="fa-solid fa-xmark text-2xl p-2 "></i>
+        </div>
+        <ul class="flex flex-col items-start justify-start gap-4 text-black mt-10">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+    
+
+
+
+    <script>
+
+        const toggleBtn = document.getElementById('openMenu'); // Menu icon
+        const closeBtn = document.getElementById('closeMenu');   // Close icon
+        const dropdown = document.getElementById('molieNav');    // Dropdown menu
+
+        // When menu icon is clicked, show close icon and dropdown menu
+        toggleBtn.addEventListener('click', () => {
+            toggleBtn.classList.add('hidden');  // Hide menu icon
+            closeBtn.classList.remove('hidden');  // Show close icon
+            dropdown.classList.remove('hidden');  // Show dropdown menu
+        });
+
+        // When close icon is clicked, hide dropdown menu and show menu icon
+        closeBtn.addEventListener('click', () => {
+            closeBtn.classList.add('hidden');  // Hide close icon
+            toggleBtn.classList.remove('hidden');  // Show menu icon
+            dropdown.classList.add('hidden');  // Hide dropdown menu
+        });
+    </script>
+</body>
+
+</html>
